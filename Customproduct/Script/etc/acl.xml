@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * Customproduct Script Integration
+ *
+ * @category  Customproduct
+ * @package   Customproduct_Script
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+	<acl>
+		<resources>
+			<resource id="Magento_Backend::admin">
+				<resource id="Customproduct_Script::productscript" sortOrder="10" title="productscript">
+					<resource id="Customproduct_Script::index_index" sortOrder="10" title="index index"/>
+					<resource id="Customproduct_Script::index_create" sortOrder="10" title="index create"/>
+				</resource>
+				<resource id="Magento_Backend::stores">
+					<resource id="Magento_Backend::stores_settings">
+						<resource id="Magento_Config::config">
+							<resource id="Customproduct_Script::config_customproduct_script" title="product"/>
+						</resource>
+					</resource>
+				</resource>
+			</resource>
+		</resources>
+	</acl>
+</config>

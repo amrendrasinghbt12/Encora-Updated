@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * Customproduct Script Integration
+ *
+ * @category  Customproduct
+ * @package   Customproduct_Script
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+		<add id="Customproduct::top_level" module="Customproduct_Script" resource="Magento_Backend::content" sortOrder="9999" title="Customproduct"/>
+		<add action="productscript/index/index" id="Customproduct_Script::index_index" module="Customproduct_Script" parent="Customproduct::top_level" resource="Customproduct_Script::index_index" sortOrder="9999" title="Custom Product"/>
+		
+	</menu>
+</config>

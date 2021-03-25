@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Customproduct Script Integration
+ *
+ * @category  Customproduct
+ * @package   Customproduct_Script
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Communication/etc/communication.xsd">
+    <topic name="support.queue.transcript" request="string">
+        <handler name="processAddProductToQueue"  type="Customproduct\Script\Model\Queue\Consumer" method="process" />
+    </topic>
+</config>

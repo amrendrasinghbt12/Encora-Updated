@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * Customproduct Script Integration
+ *
+ * @category  Customproduct
+ * @package   Customproduct_Script
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+	<router id="admin">
+		<route frontName="productscript" id="productscript">
+			<module before="Magento_Backend" name="Customproduct_Script"/>
+		</route>
+	</router>
+</config>

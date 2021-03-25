@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * CustomproductScript Integration
+ *
+ * @category  Customproduct
+ * @package   Customproduct_Script
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Customproduct\Script\Api\MessageInterface" type="Customproduct\Script\Model\Message" />
+    <preference for="Customproduct\Script\Api\SubscriberInterface" type="Customproduct\Script\Model\Subscriber" />
+    <type name="Magento\Framework\Console\CommandList">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="ProductCopyExport" xsi:type="object">Customproduct\Script\Console\Command\ProductCopyExport</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
